@@ -2,7 +2,7 @@ function [ AvePowerSpectraAllFrames_g, FocalPowerSpectra,FocalWaveform,Window,Fo
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Ccode is optimized and allows any sized array of Frequency, X range, and Z
-%range that is smaller than RAM of computer. 
+%range that is smaller than VRAM of the GPU. 
 %In particular windowing is applied at the focal point to supress side
 %lobes. Windowing is incorrect for any other pixel location
 %This function loops through a set of frames from a data file.
