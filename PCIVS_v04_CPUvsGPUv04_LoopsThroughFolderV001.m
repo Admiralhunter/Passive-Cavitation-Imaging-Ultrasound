@@ -37,10 +37,6 @@ SaveFolder = 'D:\20161220 AW-20180409T012856Z-001\20161220 AW\Analyzed_WindowLen
 VerasonicsFile = 'L7-4_PCI_w128RyLns_v06_78125_NewMainVH6';
 
 
-%StartFolder = 'D:\Test\';
-%VerasonicsFolder = 'D:\Test\';
-%SaveFolder = 'D:\Test\test\Analyzed_WindowLength240';
-%VerasonicsFile = 'test\L7-4_PCI_w128RyLns_vAW1e';
 
 
 
@@ -206,7 +202,7 @@ for ii = 1:length(Folders)
                     RFFTgpu = single(gpuArray(RFFT(fselecti,:,:)));
                     
                     AvePowerSpectraAllFramesgpu = zeros([length(x) length(z) length(fselecti)],'gpuArray');
-                    %AvePowerSpectraAllFrames2gpu = AvePowerSpectraAllFramesgpu;
+
                     
                     FrameComputationTimegpu = zeros(1,length(NFrameStart:NFramesAnalyze));
                     
